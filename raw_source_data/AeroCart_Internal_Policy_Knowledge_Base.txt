@@ -1,0 +1,273 @@
+**AeroCart Internal Policy Knowledge Base**
+
+**Document Version:** 4 (Expanded for Training & Demonstration)  
+**Last Updated:** May 2026  
+**Document Owner:** Customer Success & Operations Leadership  
+**Target Audience:** L1 (Frontline), L2 (Escalation), and L3 (Specialist) Support Agents  
+**Purpose:** This expanded knowledge base serves as the single source of truth for all support interactions. Use it for consistent policy enforcement, training simulations, and fine-tuning demonstration datasets.
+
+---
+
+### 1.0 COMPANY MISSION & AGENT DIRECTIVES
+
+**1.1 Core Philosophy**  
+AeroCart is committed to providing seamless, transparent, and efficient e-commerce experiences for every customer. As a support agent, your primary directive is **First Contact Resolution (FCR)**. Agents must resolve issues on the first touchpoint whenever policy allows. Always prioritize customer satisfaction within the boundaries of established policies. Document every interaction thoroughly in the CRM system for audit trails and continuous improvement.
+
+**1.2 Tone and Voice Guidelines**  
+Maintain a tone that is empathetic, professional, confident, and definitive. Never promise a resolution outside of standard Service Level Agreements (SLAs). Use active voice, avoid overly robotic phrasing, and personalize responses where appropriate (e.g., use the customer’s name). Examples of approved phrasing:
+- “I understand how frustrating this must be…”
+- “Here’s what I can do for you within our policy…”
+- “Let me walk you through the next steps clearly.”
+
+**1.3 Handling Frustrated Customers**  
+If a customer is frustrated, use the **A-A-R** framework:  
+- **Acknowledge** the issue and their emotions.  
+- **Align** with their frustration without agreeing to policy violations.  
+- **Resolve** within policy or escalate professionally.  
+
+The customer is not always right, but they always deserve a respectful, clear explanation of our rules. De-escalation scripts and role-play scenarios are available in the internal training portal.
+
+**1.4 Escalation Pathways**  
+L1 agents are strictly prohibited from bypassing policy restrictions. Any request for exceptions (e.g., refunding outside the 30-day window, waiving restocking fees without approval) must be escalated to an L2 Team Lead via the internal ticketing system (Zendesk/Jira). Provide a warm handover with complete case notes, screenshots, order history, and prior communication summary. L2 agents may escalate to L3 for complex cases involving fraud, legal, or high-value disputes.
+
+**1.5 Agent Performance Expectations**  
+- Maintain CSAT scores above 92%.  
+- Achieve FCR rate of 75%+ for L1.  
+- Average handle time (AHT) under 8 minutes for standard queries.  
+- Mandatory logging of all policy references used in each ticket.
+
+**1.6 Continuous Training & Updates**  
+Agents must review this knowledge base weekly. Policy changes will be announced via Slack #support-policy-updates channel and reflected in version history.
+
+---
+
+### 2.0 ORDER MANAGEMENT & MODIFICATIONS
+
+**2.1 Order Cancellations**  
+Customers can self-cancel orders via the AeroCart Dashboard within a **60-minute grace period** after checkout. Once this window expires, the order locks into the Order Management System (OMS) and is sent to the warehouse for picking and packing. Agents **cannot** cancel an order once the status changes from "Pending" to "Processing."  
+
+**Additional Scenarios:**  
+- If the customer contacts us within the grace period but the self-cancel button is unavailable due to a rare technical glitch, L1 agents may process the cancellation manually after verifying payment status.  
+- Post-grace period cancellation requests should be politely denied with an explanation and offer alternatives (e.g., return after delivery).
+
+**2.2 Address Modifications**  
+Agents can modify shipping addresses **only if** the order status is still "Pending." Once the status is "Processing" or "Shipped," AeroCart cannot reroute the package. The customer must contact the carrier (FedEx, UPS, USPS) directly using their tracking number. Provide the carrier’s customer service links and tracking instructions.
+
+**2.3 Adding/Removing Items**  
+Post-checkout cart modifications are strictly prohibited. Agents do not have system permissions to add or remove items from a finalized order. If a customer wants to add an item, instruct them to place a new, separate order. For removal requests after the grace period, guide the customer toward a return process once the item is delivered.
+
+**2.4 Price Matching**  
+AeroCart does not price match third-party retailers (Amazon, Target, Walmart, etc.). However, if an item purchased on AeroCart goes on sale on our website within **7 days** of the original purchase date, agents are authorized to issue a digital **Store Credit** for the price difference (no cash refund to original payment method).  
+
+**Process:** Verify purchase date, current sale price, and issue credit via the OMS tools. Log the adjustment reason.
+
+**2.5 Order Status Tracking & Communication**  
+Agents must proactively update customers on order status changes (e.g., “Your order has moved to Processing – expected ship date is…”). Use templated email/SMS notifications where possible.
+
+**2.6 Bulk Order & B2B Handling**  
+For orders exceeding $500 or containing 10+ items, additional verification steps apply. L1 agents should escalate to L2 for review before any modifications.
+
+---
+
+### 3.0 SHIPPING, DELIVERY & CARRIER PROTOCOLS
+
+**3.1 Shipping Tiers and SLAs**  
+- **Standard Shipping:** 5-7 business days.  
+- **Expedited Shipping:** 2-3 business days.  
+- **Overnight Shipping:** Guaranteed by 8:00 PM the following business day (orders placed before 1:00 PM EST cutoff).  
+
+International shipping details expanded in section 3.5.
+
+**3.2 Lost in Transit (LIT)**  
+A package is classified as Lost in Transit only after **zero tracking movement** for **7 consecutive business days**. Agents must not issue replacements or refunds before this threshold. Once verified:  
+1. Issue replacement via OMS.  
+2. File carrier claim in the backend portal.  
+3. Notify customer with expected replacement timeline (usually 5-7 days).
+
+**3.3 Stolen Packages (Marked Delivered)**  
+If tracking shows "Delivered" but customer claims non-receipt:  
+- Instruct 24-hour wait + check with neighbors/apartment management.  
+- Require digital signature on **Affidavit of Missing Parcel** form.  
+- Only then issue **one-time courtesy replacement**. Refunds are **never** issued for stolen packages.
+
+**3.4 Damaged in Transit (DIT)**  
+Customer must report within **48 hours** of delivery with clear photos of the damaged item **and** crushed packaging. Upon L1 verification, immediately dispatch replacement. Keep records of all photo evidence.
+
+**3.5 International Shipping**  
+AeroCart ships to US, Canada, UK, Australia, and select EU countries. International standard shipping: 10-21 business days. Customers are 100% responsible for customs duties, import taxes, and VAT. If a package is refused due to fees, return shipping costs are deducted from any applicable refund.
+
+**3.6 Carrier-Specific Issues**  
+Detailed troubleshooting for FedEx, UPS, USPS delays, failed delivery attempts, and signature requirements are available in the Carrier Integration Handbook (linked in internal wiki).
+
+**3.7 Holiday & Peak Season Adjustments**  
+During Black Friday, Christmas, and other peak periods, SLAs may be extended by 2-3 days. Communicate transparently.
+
+---
+
+### 4.0 RETURNS, EXCHANGES & REFUNDS
+
+**4.1 The Standard 30-Day Window**  
+30-day return window for most apparel, home goods, and unopened non-perishable items. Countdown starts on the **"Delivered"** date per carrier tracking.
+
+**4.2 Return Merchandise Authorization (RMA)**  
+All returns require a system-generated RMA. Customers initiate via Dashboard. Agents can only manually generate RMAs in cases of proven portal errors (with screenshot evidence).
+
+**4.3 Condition of Returned Merchandise**  
+Items must be in original packaging, with tags attached, zero wear/washing/alteration/pet hair. QA inspection is final. Rejected returns are shipped back at customer expense.
+
+**4.4 Refund Processing Timelines**  
+- QA inspection: 48 business hours.  
+- Approved refunds to original payment method: 3-5 business days (cards) or instant (store credit).
+
+**4.5 Return Shipping Fees**  
+- Buyer’s remorse: $7.99 fee deducted.  
+- AeroCart error (wrong/defective item): Fee waived + prepaid label provided.
+
+**4.6 Exchange Process**  
+Exchanges are treated as a return + new order. Customer receives a replacement after the original is processed.
+
+**4.7 Partial Returns**  
+Allowed for multi-item orders. Only returned items are refunded; restocking fees may apply per item.
+
+---
+
+### 5.0 CATEGORY-SPECIFIC RESTRICTIONS
+
+**5.1 Final Sale and Clearance**  
+All "Final Sale" and items discounted 40%+ are non-refundable/non-exchangeable.
+
+**5.2 Hygiene, Health, and Perishables**  
+No returns for intimate apparel, swimwear (hygiene strip removed), earrings, cosmetics, skincare, food, or perishables.
+
+**5.3 Custom and Personalized Orders**  
+Monogrammed, engraved, or built-to-order items are non-returnable except under Warranty for manufacturing defects.
+
+**5.4 Electronics and Hardware**  
+14-day return window. 15% restocking fee for opened items without verified defect.
+
+**5.5 Furniture & Large Items**  
+Special handling required. Returns may incur higher shipping fees. White glove delivery items have stricter inspection rules.
+
+---
+
+### 6.0 WARRANTY CLAIMS & DEFECTIVE MERCHANDISE
+
+**6.1 Manufacturer Defects**  
+Report within 14 days with photos. Options: full refund, free replacement, or 30% partial refund.
+
+**6.2 Normal Wear and Tear**  
+Not covered. Provide care instructions and deny claims firmly but empathetically.
+
+**6.3 Electronics Troubleshooting**  
+Mandatory L1 Checklist (power cycle, firmware update, etc.) before RMA.
+
+**6.4 Serial Number Tracking**  
+All high-value items are logged. Mismatched SN = fraud → account ban.
+
+**6.5 Extended Warranty Options**  
+AeroPlus Platinum members get extended coverage. Third-party warranties handled via manufacturer.
+
+---
+
+### 7.0 BILLING, PAYMENTS & DISPUTES
+
+**7.1 Accepted Payment Methods**  
+Visa, MC, Amex, Discover, PayPal, Apple Pay, Klarna. No wire, checks, or crypto.
+
+**7.2 Klarna Refunds**  
+Refund issued to Klarna; customers contact Klarna for installment adjustments.
+
+**7.3 Promo Code Stacking**  
+Limited to one code per order unless campaign-specific authorization.
+
+**7.4 Credit Card Chargebacks**  
+Threat of chargeback → immediate escalation to L2 Financial Dispute team. No negotiation.
+
+**7.5 Tax & Billing Errors**  
+Agents can correct minor tax discrepancies. Major issues escalated.
+
+---
+
+### 8.0 AEROPLUS LOYALTY PROGRAM
+
+**8.1 Tier Structure**  
+- Silver (0-499 pts)  
+- Gold (500-999 pts)  
+- Platinum (1000+ pts)  
+1 point per $1 spent.
+
+**8.2 Point Expiration**  
+12 months without activity. No manual restoration.
+
+**8.3 Platinum Perks**  
+Free expedited shipping, VIP phone line, 60-day returns, birthday rewards, early access to sales.
+
+**8.4 Point Redemption & Transfer**  
+Points redeemable for store credit. Non-transferable between accounts.
+
+---
+
+### 9.0 ACCOUNT SECURITY & DATA PRIVACY
+
+**9.1 Password Resets**  
+Only via automated “Forgot Password” link. Agents never manually reset.
+
+**9.2 Account Takeover (ATO)**  
+Immediate account freeze + escalation to L3 Fraud.
+
+**9.3 GDPR/CCPA Data Deletion**  
+Route to Privacy Compliance queue. Process takes up to 30 days.
+
+**9.4 Two-Factor Authentication (2FA)**  
+Encourage enablement. Assist with setup issues only.
+
+---
+
+### 10.0 COMMON CUSTOMER QUERIES & SAMPLE RESPONSES (New Section)
+
+**10.1 Delayed Shipping**  
+Template response + escalation criteria.
+
+**10.2 Wrong Item Received**  
+Verification steps and RMA process.
+
+**10.3 Sizing Issues**  
+Guide to size charts, exchange process.
+
+**10.4 Billing Questions**  
+Common disputes and resolution paths.
+
+**10.5 Promo Code Issues**  
+Eligibility checks and alternatives.
+
+---
+
+### 11.0 AGENT TOOLS & SYSTEMS (New Section)
+
+- OMS (Order Management System)  
+- CRM Ticketing Platform  
+- Carrier Integration Portal  
+- QA Photo Review Tool  
+- Knowledge Base Search  
+- Escalation Matrix  
+
+**11.1 Best Practices for Tool Usage**  
+Step-by-step guides for common workflows.
+
+---
+
+### 12.0 PERFORMANCE METRICS, AUDITS & COMPLIANCE (New Section)
+
+- KPI targets  
+- Monthly audits  
+- Policy violation consequences  
+- Quality Assurance scoring rubric
+
+---
+
+**Appendix A:** Full List of Approved Response Templates  
+**Appendix B:** Escalation Contact Directory  
+**Appendix C:** Carrier Contact Information & Tracking Best Practices  
+**Appendix D:** Version History & Change Log  
+
+---
